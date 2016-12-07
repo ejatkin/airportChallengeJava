@@ -27,5 +27,12 @@ describe('Airport', function(){
     });
   });
 
+  describe('confirms a taken off plane', function() {
+    it('has taken off', function() {
+      airport.releasesTakenOffPlane(plane);
+      expect(airport.confirmLanding(plane)).toEqual(false);
+    });
+  });
+
 
 });
